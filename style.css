@@ -38,28 +38,54 @@ hr{
     max-width:1320px;
     padding:50px;
 }
-.name,.about,.projects,.contact{
-    color:var(--secondary);
+.about,.projects,.contact{
+    color:var(--light);
+    font-weight:300;
 }
-.title-section,.about-section,.project-section{
+.title-section{
   margin-top:30px;
   margin-bottom:50px;
 }
-
+.project-section{
+    margin-top:15px;
+}
 .name{
     font-size:35px;
     font-weight:300;
+    color:var(--secondary)
 }
-
 .title{
     color:var(--light);
-     font-size:18px;
+    font-size:18px;
     font-weight:300;
 }
 .footer{
     width:100%;
-    max-width:1320px;
+    max-width:1320px;   
+}
+
+.project-one{
+    margin-top:15px;
+}
+.project-one h4{
+    color:var(--light);
    
+}
+.project-one p{
+    padding-top:5px;
+}
+.project-one ul li{
+    display:inline-block;
+}
+.project-one li{
+    padding-left:5px;
+}
+.tools,.update{
+    display:flex;
+    margin-top:5px;
+}
+.update p{
+    display:inline-block;
 }
 /*Mobile*/
 @media (max-width:768px){
