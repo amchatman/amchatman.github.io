@@ -87,6 +87,9 @@ hr{
 .update p{
     display:inline-block;
 }
+input{
+    color:gold;
+}
 /*Mobile*/
 @media (max-width:768px){
     .title-section{
