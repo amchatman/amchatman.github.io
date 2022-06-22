@@ -7,16 +7,14 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    
+    box-sizing:border-box;   
 }
 body{
     background-color:var(--primary);
     color:var(--lightgray);
     font-family:Roboto,Arial,sans-serif;
     font-size:14px;
-    line-height:1.5;
-   
+    line-height:1.5;  
 }
 a{
     text-decoration:none;
@@ -31,24 +29,45 @@ hr{
  height:1px;
  border:0px;
  opacity:.2;
-
 }
-.container{
+.container,.footer-container{
     width:100%;
     max-width:1320px;
     padding:50px;
+    margin:0 auto;
 }
 .about,.projects,.contact{
     color:var(--light);
     font-weight:300;
 }
-.title-section{
+.title-section,.about-section,.project-section,.footer-section{
   margin-top:30px;
-  margin-bottom:50px;
+  margin-bottom:30px;
+  text-align:center;
 }
-.project-section{
-    margin-top:15px;
+.title-section  li{
+    list-style:none;
+    display:inline;
+    font-size:16px;
+    padding:10px;
 }
+.about-section,.project-section,.footer-section{
+    padding-top:10px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:10px;
+    text-align:left;
+}
+.about-list{
+  display:flex;
+  justify-content:space-around;
+  padding:45px;
+}
+.about-list li{
+padding:2px;
+list-style:none;
+}
+
 .name{
     font-size:35px;
     font-weight:300;
@@ -59,14 +78,10 @@ hr{
     font-size:18px;
     font-weight:300;
 }
-.footer{
-    width:100%;
-    max-width:1320px;   
-}
-
 .project-one{
     margin-top:15px;
 }
+
 .project-one h4{
     color:var(--light);
    
@@ -80,6 +95,7 @@ hr{
 .project-one li{
     padding-left:5px;
 }
+
 .tools,.update{
     display:flex;
     margin-top:5px;
