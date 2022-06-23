@@ -36,52 +36,69 @@ hr{
     padding:50px;
     margin:0 auto;
 }
-.about,.projects,.contact{
-    color:var(--light);
-    font-weight:300;
-}
-.title-section,.about-section,.project-section,.footer-section{
-  margin-top:30px;
-  margin-bottom:30px;
-  text-align:center;
-}
+.title-section{
+    margin-top:30px;
+    margin-bottom:30px;
+    text-align:center;
+  }
 .title-section  li{
     list-style:none;
     display:inline;
     font-size:16px;
     padding:10px;
 }
-.about-section,.project-section,.footer-section{
-    padding-top:10px;
-    padding-left:40px;
-    padding-right:40px;
-    padding-bottom:10px;
-    text-align:left;
-}
-.about-list{
-  display:flex;
-  justify-content:space-around;
-  padding:45px;
-}
-.about-list li{
-padding:2px;
-list-style:none;
-}
-
 .name{
-    font-size:35px;
+    font-size:40px;
     font-weight:300;
     color:var(--secondary)
 }
 .title{
     color:var(--light);
-    font-size:18px;
+    font-size:25px;
     font-weight:300;
 }
-.project-one{
-    margin-top:15px;
+.about-section,.project-section{
+    margin:auto;
 }
-
+.about,.projects,.contact{
+    color:var(--light);
+}
+.about,.projects{
+    text-align:center;
+    font-size:40px;
+    font-weight:300;
+}
+.about-section p{
+    font-size:20px;
+    width:66%;
+    text-align:center;
+    margin:0 auto;
+    font-weight:300;
+}
+.about-list{
+  display:flex;
+  text-align:center;
+  margin-top:35px;
+  margin-bottom:35px;
+  padding-left:100px;
+  padding-right:100px;
+}
+.about-list h5{
+    color:var(--light);
+    font-size:14px;
+}
+.about-list ul{
+    width:33%;
+    padding:20px;
+}
+.about-list li{
+padding:2px;
+list-style:none;
+}
+.project-one{
+    margin:0 auto;
+    width:50%;
+}
 .project-one h4{
     color:var(--light);
    
@@ -108,8 +125,24 @@ input{
 }
 /*Mobile*/
 @media (max-width:768px){
-    .title-section{
+    .container{
+        padding-left:16px;
+        padding-right:16px;
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    .title-section,.about-section{
         width:auto;
         text-align:center;
+    }
+    .about-section p{
+        font-size:18px;
+        margin-bottom:24px;
+    }
+    .about-list{
+        display:block;
+    }
+    .about-list li{
+        padding:5px
     }
 }
